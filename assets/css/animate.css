@@ -1,5 +1,7 @@
 .show {
   transform: translateX(0%) !important;
   transition: 0.3s;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 /*# sourceMappingURL=animate.css.map */

@@ -79,6 +79,15 @@ body {
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
     a {
       font-weight: normal !important;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+        color: white;
+      }
+      &:visited {
+        text-decoration: none;
+        color: $white;
+      }
     }
   }
 }

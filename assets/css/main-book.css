@@ -77,6 +77,17 @@ body {
 
 .header .header-body a {
   font-weight: normal !important;
+  color: white;
+}
+
+.header .header-body a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.header .header-body a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .main {

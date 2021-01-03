@@ -88,7 +88,7 @@ body {
   .cover-slider {
     position: relative;
 
-    .carousel {
+    .img {
       width: 100%;
       z-index: 2;
       position: relative;
@@ -104,7 +104,6 @@ body {
       z-index: 3;
     }
   }
-
   .content {
     margin: 2px 0;
     position: relative;
@@ -122,50 +121,28 @@ body {
       }
     }
 
-    .best-seller-section {
-      margin-top: 27px;
-      width: 100%;
-      .book-card-wrapper {
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        margin: 17px 18px 17px 18px;
-      }
-    }
-  }
-
-  .publish-wrapper {
-    margin: 27px 18px 18px;
-    display: flex;
-    align-items: center;
-    height: 200px;
-    .text-group {
-      p {
-        font-size: 23px;
+    .category {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        font-size: 11px;
+        display: inline-block;
         color: $green;
-        span {
-          font-weight: bold;
-        }
       }
     }
-    .img-comp {
-      border-radius: 50%;
-      transition: 0.2s;
-      &:hover {
-        box-shadow: 2px 3px $yellow;
-      }
-      img {
-        width: 138px;
+
+    .book-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 40px;
+      .book {
+        width: 164px;
+        margin-bottom: 18px;
       }
     }
   }
-}
-
-.publish-section,
-.category-section,
-.best-seller-section {
-  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
-  padding: 0px 0px 20px 0;
 }
 
 @media (max-width: 592px) {

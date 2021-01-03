@@ -10,6 +10,7 @@
 
 .btn-green:hover {
   background-color: #2a9d8f;
+  color: #2a9d8f !important;
 }
 
 .btn-green a {
@@ -41,6 +42,7 @@
 
 .btn-invite:hover {
   background-color: #2a9d8f;
+  color: #2a9d8f !important;
 }
 
 .btn-invite a {

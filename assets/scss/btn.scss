@@ -13,6 +13,7 @@ $yellow: #e9c46a;
   margin: 0 $margin_x;
   &:hover {
     background-color: $color;
+    color: $color !important;
   }
   a {
     display: inline-block;

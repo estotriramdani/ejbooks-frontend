@@ -22,13 +22,13 @@ body {
   width: 414px;
   background-color: white;
   overflow-x: hidden;
-  height: 2000px;
+  min-height: 110vh;
   position: relative;
 }
 
 .header {
   position: fixed;
-  z-index: 99;
+  z-index: 10;
   top: 0;
   color: white;
   width: 414px;
@@ -39,10 +39,16 @@ body {
   background-color: #2a9d8f;
   height: 7vh;
   padding-top: 9px;
+  z-index: 10;
 }
 
 .header .header-head .logo img {
   height: 25px;
+}
+
+.header .header-head .menu {
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .header .header-head .menu img {
@@ -56,6 +62,7 @@ body {
   width: 80%;
   height: 93vh;
   display: flex;
+  z-index: 9;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -64,6 +71,8 @@ body {
   transform: translateX(105%);
   transition: 0.3s;
   visibility: hidden;
+  opacity: 0;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .header .header-body a {
@@ -78,7 +87,7 @@ body {
   position: relative;
 }
 
-.main .cover img {
+.main .cover .carousel {
   width: 100%;
   z-index: 2;
   position: relative;
@@ -117,14 +126,50 @@ body {
 
 .main .content .best-seller-section {
   margin-top: 27px;
-  width: 99%;
+  width: 100%;
 }
 
 .main .content .best-seller-section .book-card-wrapper {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  margin: 17px 18px 0 18px;
+  margin: 17px 18px 17px 18px;
+}
+
+.main .publish-wrapper {
+  margin: 27px 18px 18px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+.main .publish-wrapper .text-group p {
+  font-size: 23px;
+  color: #2a9d8f;
+}
+
+.main .publish-wrapper .text-group p span {
+  font-weight: bold;
+}
+
+.main .publish-wrapper .img-comp {
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.main .publish-wrapper .img-comp:hover {
+  box-shadow: 2px 3px #e9c46a;
+}
+
+.main .publish-wrapper .img-comp img {
+  width: 138px;
+}
+
+.publish-section,
+.category-section,
+.best-seller-section {
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
+  padding: 0px 0px 20px 0;
 }
 
 @media (max-width: 592px) {

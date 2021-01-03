@@ -1,0 +1,62 @@
+.btn-green {
+  width: 125px;
+  height: 30px;
+  background-color: white;
+  color: #2a9d8f;
+  border: 1px #2a9d8f solid;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.btn-green:hover {
+  background-color: #2a9d8f;
+}
+
+.btn-green a {
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-green a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-green a {
+  color: #2a9d8f;
+}
+
+.btn-invite {
+  width: 125px;
+  height: 30px;
+  background-color: white;
+  color: #2a9d8f;
+  border: 1px #2a9d8f solid;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+.btn-invite:hover {
+  background-color: #2a9d8f;
+}
+
+.btn-invite a {
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-invite a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-invite a {
+  color: #2a9d8f;
+}
+/*# sourceMappingURL=btn.css.map */

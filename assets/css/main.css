@@ -22,7 +22,7 @@ body {
   width: 414px;
   background-color: white;
   overflow-x: hidden;
-  height: 1000px;
+  height: 2000px;
   position: relative;
 }
 
@@ -48,7 +48,7 @@ body {
 .header .header-head .menu img {
   height: 25px;
   position: absolute;
-  right: 36px;
+  right: 18px;
 }
 
 .header .header-body {
@@ -64,7 +64,6 @@ body {
   transform: translateX(105%);
   transition: 0.3s;
   visibility: hidden;
-  opacity: 0;
 }
 
 .header .header-body a {
@@ -102,23 +101,22 @@ body {
 }
 
 .main .content .label {
-  position: absolute;
-  left: -2px;
-  padding: 0 0 0 15px;
-  top: -12px;
+  padding: 0 0 0 18px;
   z-index: 4;
-  width: 120px;
-  height: 23px;
+  width: 240px;
+  height: 33px;
   background-color: #2a9d8f;
+  box-shadow: 5px 5px #e9c46a;
 }
 
 .main .content .label p {
-  font-size: 10px;
-  line-height: 23px;
+  font-size: 14px;
+  line-height: 33px;
   color: white;
 }
 
 .main .content .best-seller-section {
+  margin-top: 27px;
   width: 99%;
 }
 
@@ -126,7 +124,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
-  margin: 0 18px;
+  margin: 17px 18px 0 18px;
 }
 
 @media (max-width: 592px) {

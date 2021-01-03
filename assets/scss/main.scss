@@ -27,7 +27,7 @@ body {
   background-color: $white;
   overflow-x: hidden;
   // min-height: 100vh;
-  height: 1000px;
+  height: 2000px;
   position: relative;
 }
 
@@ -53,7 +53,7 @@ body {
       img {
         height: 25px;
         position: absolute;
-        right: 36px;
+        right: 18px;
       }
     }
   }
@@ -71,7 +71,7 @@ body {
     transform: translateX(105%);
     transition: 0.3s;
     visibility: hidden;
-    opacity: 0;
+    // opacity: 0;
     a {
       font-weight: normal !important;
     }
@@ -103,28 +103,27 @@ body {
     margin: 2px 0;
     position: relative;
     .label {
-      position: absolute;
-      left: -2px;
-      padding: 0 0 0 15px;
-      top: -12px;
+      padding: 0 0 0 18px;
       z-index: 4;
-      width: 120px;
-      height: 23px;
+      width: 240px;
+      height: 33px;
       background-color: $green;
+      box-shadow: 5px 5px $yellow;
       p {
-        font-size: 10px;
-        line-height: 23px;
+        font-size: 14px;
+        line-height: 33px;
         color: $white;
       }
     }
 
     .best-seller-section {
+      margin-top: 27px;
       width: 99%;
       .book-card-wrapper {
         display: flex;
         flex-direction: row;
         overflow-x: scroll;
-        margin: 0 18px;
+        margin: 17px 18px 0 18px;
       }
     }
   }

@@ -1,0 +1,28 @@
+.book-cat {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 111px;
+  margin-top: 15px;
+}
+
+.book-cat .icon-cat {
+  margin-top: 30px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.book-cat .icon-cat img {
+  width: 60px;
+}
+
+.book-cat .icon-cat p {
+  font-size: 9px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.book-cat .icon-cat:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=cat.css.map */

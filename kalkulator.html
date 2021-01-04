@@ -68,6 +68,11 @@
           <div class="rounded"></div>
         </div>
         <div class="content" ng-app="">
+          <p>
+            Kalkulator harga buku ini sebagai referensi penulis dalam menentukan
+            harga buku sesuai standar EJ Books. Penulis boleh menjual bukunya
+            lebih dari harga yang dihasilkan kalkulator ini.
+          </p>
           <h3>Input</h3>
           <div class="calc">
             <div class="label"><label>Jumlah Halaman</label></div>
@@ -75,6 +80,7 @@
               class="form-control input"
               type="number"
               ng-model="total_pages"
+              value="0"
             />
             <div class="label"><label>Jenis Kertas</label></div>
             <input
@@ -94,14 +100,11 @@
           <h3 class="mt-4">Output</h3>
           <div class="label"><label>Harga Buku Minimal</label></div>
           <div class="price">
-            <p>Rp{{(250 * total_pages) + 15000 + 20000}},-</p>
+            <p>Rp {{(250 * total_pages) + 15000 + 28000}},-</p>
           </div>
-          <div class="label"><label>Royalti</label></div>
+          <div class="label"><label>Royalti (25% dari harga buku)</label></div>
           <div class="royalti">
-            <p>
-              Rp{{((250 * total_pages) + 15000 + 30000) * 0.25}},-
-              <small>per buku</small>
-            </p>
+            <p>Rp {{((250 * total_pages) + 15000 + 30000) * 0.25}},-</p>
           </div>
         </div>
       </div>

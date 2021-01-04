@@ -38,6 +38,7 @@
 @media (max-width: 592px) {
   .preloader .logo {
     left: 30vw;
+    top: 40vh;
   }
 }
 /*# sourceMappingURL=preloader.css.map */

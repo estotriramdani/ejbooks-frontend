@@ -1,0 +1,9 @@
+.clear {
+  position: absolute;
+  height: 100%;
+  width: 90px;
+  opacity: 0.8;
+  top: 0;
+  z-index: 9;
+}
+/*# sourceMappingURL=hide-header.css.map */

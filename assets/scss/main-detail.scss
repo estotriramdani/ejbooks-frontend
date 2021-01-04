@@ -96,13 +96,14 @@ body {
   margin-top: 7vh;
   .content {
     margin: 2px 18px 2px 18px;
+    overflow: hidden;
     position: relative;
     h3 {
       font-size: 18px;
       color: $green;
     }
     .thumb {
-      padding-top: 18px;
+      // padding-top: 18px;
       margin-top: 18px !important;
       img {
         width: 100%;

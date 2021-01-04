@@ -96,6 +96,7 @@ body {
 
 .main .content {
   margin: 2px 18px 2px 18px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -105,7 +106,6 @@ body {
 }
 
 .main .content .thumb {
-  padding-top: 18px;
   margin-top: 18px !important;
 }
 

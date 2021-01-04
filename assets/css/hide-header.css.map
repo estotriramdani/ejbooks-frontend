@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,GAAG;EACZ,GAAG,EAAE,CAAC;EACN,OAAO,EAAE,CAAC;CACX",
+    "sources": [
+        "../scss/hide-header.scss"
+    ],
+    "names": [],
+    "file": "hide-header.css"
+}

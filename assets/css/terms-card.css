@@ -1,0 +1,56 @@
+.terms-card {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #2a9d8f;
+  color: white;
+  position: relative;
+  height: 175px;
+  transition: 0.3s;
+}
+
+.terms-card:hover {
+  box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.3);
+}
+
+.terms-card .text-group {
+  margin-left: 23px;
+  padding-top: 15px !important;
+}
+
+.terms-card .text-group h4 {
+  font-size: 14px;
+}
+
+.terms-card .text-group h4 span {
+  font-weight: bold;
+}
+
+.terms-card .text-group p {
+  font-size: 11px;
+  max-width: 250px;
+}
+
+.terms-card .text-group p a {
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+}
+
+.terms-card .text-group p a:visited {
+  color: white;
+}
+
+.terms-card .button-action {
+  position: absolute;
+  bottom: 15px;
+  left: 23px;
+}
+
+.terms-card .img-bg img {
+  height: 145px;
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  opacity: 0.2;
+}
+/*# sourceMappingURL=terms-card.css.map */

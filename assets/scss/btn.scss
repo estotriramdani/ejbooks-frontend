@@ -4,11 +4,12 @@ $green: #2a9d8f;
 $yellow: #e9c46a;
 
 @mixin btn($width, $height, $bgcolor, $color, $margin_x) {
+  position: relative;
   width: $width;
   height: $height;
   background-color: $bgcolor;
   color: $color;
-  border: 1px $green solid;
+  border: 1px $color solid;
   box-sizing: border-box;
   margin: 0 $margin_x;
   &:hover {
@@ -16,13 +17,15 @@ $yellow: #e9c46a;
     color: $color !important;
   }
   a {
+    position: relative;
+    top: 0;
     display: inline-block;
     font-size: 9px;
     text-align: center;
     width: 100%;
     height: 100%;
     &:hover {
-      color: white;
+      color: $bgcolor;
       text-decoration: none;
     }
   }
@@ -39,5 +42,12 @@ $yellow: #e9c46a;
   @include btn(125px, 30px, white, #2a9d8f, 0);
   a {
     color: $green;
+  }
+}
+
+.btn-step {
+  @include btn(135px, 30px, #2a9d8f, white, 0);
+  a {
+    color: $white;
   }
 }

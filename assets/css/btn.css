@@ -1,4 +1,5 @@
 .btn-green {
+  position: relative;
   width: 125px;
   height: 30px;
   background-color: white;
@@ -14,6 +15,8 @@
 }
 
 .btn-green a {
+  position: relative;
+  top: 0;
   display: inline-block;
   font-size: 9px;
   text-align: center;
@@ -31,6 +34,7 @@
 }
 
 .btn-invite {
+  position: relative;
   width: 125px;
   height: 30px;
   background-color: white;
@@ -46,6 +50,8 @@
 }
 
 .btn-invite a {
+  position: relative;
+  top: 0;
   display: inline-block;
   font-size: 9px;
   text-align: center;
@@ -60,5 +66,40 @@
 
 .btn-invite a {
   color: #2a9d8f;
+}
+
+.btn-step {
+  position: relative;
+  width: 135px;
+  height: 30px;
+  background-color: #2a9d8f;
+  color: white;
+  border: 1px white solid;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+.btn-step:hover {
+  background-color: white;
+  color: white !important;
+}
+
+.btn-step a {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-step a:hover {
+  color: #2a9d8f;
+  text-decoration: none;
+}
+
+.btn-step a {
+  color: white;
 }
 /*# sourceMappingURL=btn.css.map */

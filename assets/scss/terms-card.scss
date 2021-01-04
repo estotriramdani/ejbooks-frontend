@@ -1,0 +1,53 @@
+$grey: #eaeaea;
+$white: white;
+$green: #2a9d8f;
+$yellow: #e9c46a;
+
+.terms-card {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: $green;
+  color: white;
+  position: relative;
+  height: 175px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.3);
+  }
+  .text-group {
+    margin-left: 23px;
+    padding-top: 15px !important;
+    h4 {
+      font-size: 14px;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      font-size: 11px;
+      max-width: 250px;
+      a {
+        display: inline-block;
+        text-decoration: underline;
+        color: white;
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+  .button-action {
+    position: absolute;
+    bottom: 15px;
+    left: 23px;
+  }
+  .img-bg {
+    img {
+      height: 145px;
+      position: absolute;
+      right: 8px;
+      top: 14px;
+      opacity: 0.2;
+    }
+  }
+}

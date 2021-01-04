@@ -19,7 +19,7 @@
   top: 44vh;
   left: 44vw;
   animation-name: animasi;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .preloader .logo img {
@@ -32,6 +32,12 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@media (max-width: 592px) {
+  .preloader .logo {
+    left: 30vw;
   }
 }
 /*# sourceMappingURL=preloader.css.map */

@@ -125,7 +125,31 @@ body {
   font-weight: bold;
   max-width: 203px;
   color: #2a9d8f;
-  margin-bottom: 26px;
+}
+
+.main .content .label label {
+  font-size: 11px;
+  color: #2a9d8f;
+}
+
+.main .content .input {
+  border-color: #2a9d8f !important;
+  box-sizing: border-box;
+  padding: 7px;
+  font-size: 12px;
+  width: 280px;
+  color: #2a9d8f;
+  margin-bottom: 5px;
+}
+
+.main .content .input:focus {
+  border: #2a9d8f;
+}
+
+.main .content .price,
+.main .content .royalti {
+  font-size: 16px;
+  color: #2a9d8f;
 }
 
 @media (max-width: 592px) {
@@ -137,4 +161,4 @@ body {
     width: 100%;
   }
 }
-/*# sourceMappingURL=main-terbit.css.map */
+/*# sourceMappingURL=main-kalkulator.css.map */

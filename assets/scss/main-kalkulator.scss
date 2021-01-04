@@ -97,7 +97,7 @@ body {
   .cover-slider {
     position: relative;
 
-    .carousel {
+    .img {
       width: 100%;
       z-index: 2;
       position: relative;
@@ -113,70 +113,38 @@ body {
       z-index: 3;
     }
   }
-
   .content {
-    margin: 2px 0;
+    margin: 2px 18px 0 18px;
     position: relative;
+    h3 {
+      font-size: 22px;
+      font-weight: bold;
+      max-width: 203px;
+      color: $green;
+    }
     .label {
-      padding: 0 0 0 18px;
-      z-index: 4;
-      width: 240px;
-      height: 33px;
-      background-color: $green;
-      box-shadow: 5px 5px $yellow;
-      p {
-        font-size: 14px;
-        line-height: 33px;
-        color: $white;
-      }
-    }
-
-    .best-seller-section {
-      margin-top: 27px;
-      width: 100%;
-      .book-card-wrapper {
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        margin: 17px 18px 17px 18px;
-      }
-    }
-  }
-
-  .publish-wrapper {
-    margin: 27px 18px 18px;
-    display: flex;
-    align-items: center;
-    height: 200px;
-    .text-group {
-      p {
-        font-size: 23px;
+      label {
+        font-size: 11px;
         color: $green;
-        span {
-          font-weight: bold;
-        }
       }
     }
-    .img-comp {
-      border-radius: 50%;
-      transition: 0.2s;
-      &:hover {
-        box-shadow: 2px 3px $yellow;
-      }
-      img {
-        width: 138px;
+    .input {
+      border-color: #2a9d8f !important;
+      box-sizing: border-box;
+      padding: 7px;
+      font-size: 12px;
+      width: 280px;
+      color: #2a9d8f;
+      margin-bottom: 5px;
+      &:focus {
+        border: #2a9d8f;
       }
     }
-  }
-}
-
-.publish-section,
-.category-section,
-.best-seller-section {
-  padding: 0px 0px 20px 0;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.2);
+    .price,
+    .royalti {
+      font-size: 16px;
+      color: #2a9d8f;
+    }
   }
 }
 

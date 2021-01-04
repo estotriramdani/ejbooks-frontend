@@ -51,3 +51,19 @@ $yellow: #e9c46a;
     color: $white;
   }
 }
+
+.btn-buy {
+  @include btn(100%, 30px, white, #e9c46a, 0);
+  a {
+    color: $yellow;
+    font-size: 12px !important;
+  }
+}
+
+.btn-see {
+  @include btn(100%, 30px, white, #2a9d8f, 0);
+  a {
+    color: $green;
+    font-size: 12px !important;
+  }
+}

@@ -102,4 +102,76 @@
 .btn-step a {
   color: white;
 }
+
+.btn-buy {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: #e9c46a;
+  border: 1px #e9c46a solid;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+.btn-buy:hover {
+  background-color: #e9c46a;
+  color: #e9c46a !important;
+}
+
+.btn-buy a {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-buy a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-buy a {
+  color: #e9c46a;
+  font-size: 12px !important;
+}
+
+.btn-see {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: #2a9d8f;
+  border: 1px #2a9d8f solid;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+.btn-see:hover {
+  background-color: #2a9d8f;
+  color: #2a9d8f !important;
+}
+
+.btn-see a {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  font-size: 9px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-see a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-see a {
+  color: #2a9d8f;
+  font-size: 12px !important;
+}
 /*# sourceMappingURL=btn.css.map */

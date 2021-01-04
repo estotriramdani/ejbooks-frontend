@@ -11,11 +11,15 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/main-kalkulator.css" />
+    <!-- SCSS untuk halamannya -->
+    <link rel="stylesheet" href="assets/css/main-detail.css" />
+
+    <!-- css component tiap halaman -->
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/cat.css" />
     <link rel="stylesheet" href="assets/css/book-card.css" />
     <link rel="stylesheet" href="assets/css/btn.css" />
+    <link rel="stylesheet" href="assets/css/terms-card.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,8 +27,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- script angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
   </head>
   <body>
     <!-- preloader -->
@@ -63,49 +65,49 @@
       </div>
 
       <div class="main">
-        <div class="cover-slider">
-          <img src="assets/img/cover-hargabuku.png" alt="" uk-cover />
-          <div class="rounded"></div>
-        </div>
-        <div class="content" ng-app="">
-          <p>
-            Kalkulator harga buku ini sebagai referensi penulis dalam menentukan
-            harga buku sesuai standar EJ Books. Penulis boleh menjual bukunya
-            lebih dari harga yang dihasilkan kalkulator ini.
-          </p>
-          <h3>Input</h3>
-          <div class="calc">
-            <div class="label"><label>Jumlah Halaman</label></div>
-            <input
-              class="form-control input"
-              type="number"
-              ng-model="total_pages"
-              value="0"
-            />
-            <div class="label"><label>Jenis Kertas</label></div>
-            <input
-              class="form-control input"
-              type="text"
-              value="Bookpaper"
-              disabled="disabled"
-            />
-            <div class="label"><label>Jenis Sampul</label></div>
-            <input
-              class="form-control input"
-              type="text"
-              value="Soft Cover"
-              disabled="disabled"
-            />
+        <div class="content">
+          <!-- <h3>Detail Buku</h3> -->
+          <div class="thumb">
+            <img src="assets/img/buku/nyanyian_hidup_slide1.png" alt="" />
           </div>
-          <h3 class="mt-4">Output</h3>
-          <div class="label"><label>Harga Buku Minimal</label></div>
-          <div class="price">
-            <p>Rp {{(250 * total_pages) + 15000 + 28000}},-</p>
+          <div class="identity">
+            <table>
+              <tr>
+                <td>Judul</td>
+                <td id="title">Nyanyian Hidup</td>
+              </tr>
+              <tr>
+                <td>Penulis</td>
+                <td id="author">Tim Suka Puisi</td>
+              </tr>
+              <tr>
+                <td>Tahun</td>
+                <td id="year">2020</td>
+              </tr>
+              <tr>
+                <td>Dimensi</td>
+                <td id="dimensions">13 x 20 x 1 cm</td>
+              </tr>
+              <tr>
+                <td>Harga</td>
+                <td id="price">Rp 70000</td>
+              </tr>
+              <tr>
+                <td style="padding-top: 10px"><b> Sinopsis</b></td>
+              </tr>
+              <tr>
+                <td colspan="2" style="text-align: left">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur aliquid earum ratione dolor eaque repellat, iure
+                  exercitationem porro aspernatur molestiae?
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="label"><label>Royalti (25% dari harga buku)</label></div>
-          <div class="royalti">
-            <p>Rp {{((250 * total_pages) + 15000 + 30000) * 0.25}},-</p>
+          <div class="btn-buy" style="margin: 10px 0 10px 0">
+            <a href="">Beli Buku</a>
           </div>
+          <div class="btn-see"><a href="">Lihat Buku Lainnya</a></div>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #eaeaea;
+  background-color: rgba(42, 157, 143, 0.8);
   font-family: "Poppins", sans-serif;
 }
 
@@ -179,8 +179,14 @@ body {
 .publish-section,
 .category-section,
 .best-seller-section {
-  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.2);
   padding: 0px 0px 20px 0;
+  transition: 0.3s;
+}
+
+.publish-section:hover,
+.category-section:hover,
+.best-seller-section:hover {
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 592px) {

@@ -1,0 +1,40 @@
+$grey: #eaeaea;
+$white: white;
+$green: #2a9d8f;
+$yellow: #e9c46a;
+
+.hide {
+  transform: translateY(100%) !important;
+  // display: none !important;
+  transition: 1s;
+}
+
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background-color: $green;
+  z-index: 56;
+  display: flex;
+  align-items: center;
+  .logo {
+    position: absolute;
+    top: 44vh;
+    left: 44vw;
+    animation-name: animasi;
+    animation-duration: 1s;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@keyframes animasi {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

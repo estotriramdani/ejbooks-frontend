@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/cat.css" />
     <link rel="stylesheet" href="assets/css/book-card.css" />
     <link rel="stylesheet" href="assets/css/btn.css">
+    <link rel="stylesheet" href="assets/css/preloader.css" />
+
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -24,6 +26,16 @@
     />
   </head>
   <body>
+
+    <!-- preloader -->
+    <div class="preloader animasi-preloader">
+      <div class="logo">
+        <img src="assets/img/icon/logo-nav.png" alt="" />
+      </div>
+    </div>
+    <script src="assets/js/animation-preloader.js"></script>
+    <!-- end preloader -->
+
     <div class="content-body shadow">
       <div class="header shadow-sm">
         <div class="header-head container">
@@ -77,32 +89,6 @@
         <div class="content">
           <div class="category-section">
             <div class="label"><p>Kategori</p></div>
-            <!-- <div class="row container">
-              <div class="col-3">
-                <div class="icon-cat">
-                  <img src="assets/img/icon/book.png" alt="" />
-                  <p>Kumpulan Puisi</p>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="icon-cat">
-                  <img src="assets/img/icon/bookmark.png" alt="" />
-                  <p>Novel</p>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="icon-cat">
-                  <img src="assets/img/icon/bookmark.png" alt="" />
-                  <p>Kumpulan Cerpen</p>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="icon-cat">
-                  <img src="assets/img/icon/book-gen.png" alt="" />
-                  <p>Umum</p>
-                </div>
-              </div>
-            </div> -->
             <div class="book-cat container">
               <div class="icon-cat">
                 <img src="assets/img/icon/book.png" alt="" />
@@ -184,14 +170,14 @@
               </div>
             </div>
             <div class="btn-green">
-              <a href="#">Lihat Semua Buku</a>
+              <a href="buku.html">Lihat Semua Buku</a>
             </div>
           </div>
           <div class="publish-section">
             <div class="publish-wrapper">
               <div class="text-group">
                 <p>Terbitkan Karyamu Bersama <span>EJ BOOKS</span></p>
-                <div class="btn-invite"><a href="">Klik di Sini</a></div>
+                <div class="btn-invite"><a href="terbit.html">Klik di Sini</a></div>
               </div>
               <div class="img-comp">
                 <img src="assets/img/icon/diploma.png" alt="">

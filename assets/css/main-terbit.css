@@ -98,7 +98,7 @@ body {
   position: relative;
 }
 
-.main .cover-slider .img {
+.main .cover-slider .carousel {
   width: 100%;
   z-index: 2;
   position: relative;

@@ -116,7 +116,7 @@ body {
 }
 
 .main .content {
-  margin: 2px 0;
+  margin: 2px 18px 0 18px;
   position: relative;
 }
 
@@ -135,28 +135,10 @@ body {
   color: white;
 }
 
-.main .content .category {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.main .content .category a {
-  font-size: 11px;
-  display: inline-block;
-  color: #2a9d8f;
-}
-
-.main .content .book-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 40px;
-}
-
-.main .content .book-list .book {
-  width: 164px;
-  margin-bottom: 18px;
+.main .content .media p {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 592px) {
@@ -168,4 +150,4 @@ body {
     width: 100%;
   }
 }
-/*# sourceMappingURL=main-book.css.map */
+/*# sourceMappingURL=main-kontak.css.map */

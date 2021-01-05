@@ -42,7 +42,7 @@ function showBookCard(b) {
 // carousel inner
 const carouselInner = document.querySelector(".carousel-inner");
 
-fetch("http://localhost/ejbooks-backend/api/cover.php")
+fetch("http://penerbit-ejbooks.my.id/ejbooks-backend/api/cover.php")
   .then((res) => res.json())
   .then((res) => {
     let cover = "";

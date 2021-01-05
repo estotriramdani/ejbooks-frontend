@@ -114,7 +114,7 @@ body {
     }
   }
   .content {
-    margin: 2px 0;
+    margin: 2px 18px 0 18px;
     position: relative;
     .label {
       padding: 0 0 0 18px;
@@ -130,25 +130,11 @@ body {
       }
     }
 
-    .category {
-      display: flex;
-      justify-content: space-evenly;
-      a {
-        font-size: 11px;
-        display: inline-block;
-        color: $green;
-      }
-    }
-
-    .book-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin-top: 40px;
-      .book {
-        width: 164px;
-        margin-bottom: 18px;
+    .media {
+      p {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 20px;
       }
     }
   }

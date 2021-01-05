@@ -16,11 +16,15 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/main-kalkulator.css" />
+    <!-- SCSS untuk halamannya -->
+    <link rel="stylesheet" href="assets/css/main-kontak.css" />
+
+    <!-- css component tiap halaman -->
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/cat.css" />
     <link rel="stylesheet" href="assets/css/book-card.css" />
     <link rel="stylesheet" href="assets/css/btn.css" />
+    <link rel="stylesheet" href="assets/css/terms-card.css" />
     <link rel="stylesheet" href="assets/css/preloader.css" />
     <link rel="stylesheet" href="assets/css/hide-header.css" />
 
@@ -29,8 +33,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- script angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
     <!-- meta -->
     <meta
@@ -85,7 +87,7 @@
           <a href="buku.html">Cari Buku</a>
           <a href="terbit.html">Terbit</a>
           <a href="kalkulator.html">Kalkulator</a>
-          <a href="kontak.html">Kontak</a>
+          <a href="kontak.html">kontak</a>
         </div>
       </div>
 
@@ -99,53 +101,30 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="assets/img/cover-kalkulator.jpg"
+                  src="assets/img/cover-kontak.jpg"
                   class="d-block w-100"
-                  alt="..."
+                  alt="kontak EJ Books agar lebih mudah"
                 />
               </div>
             </div>
           </div>
           <div class="rounded"></div>
         </div>
-        <div class="content" ng-app="">
-          <p>
-            Kalkulator harga buku ini sebagai referensi penulis dalam menentukan
-            harga buku sesuai standar EJ Books. Penulis boleh menjual bukunya
-            lebih dari harga yang dihasilkan kalkulator ini.
-          </p>
-          <h3>Input</h3>
-          <div class="calc">
-            <div class="label"><label>Jumlah Halaman</label></div>
-            <input
-              class="form-control input"
-              type="number"
-              ng-model="total_pages"
-              value="0"
-            />
-            <div class="label"><label>Jenis Kertas</label></div>
-            <input
-              class="form-control input"
-              type="text"
-              value="Bookpaper"
-              disabled="disabled"
-            />
-            <div class="label"><label>Jenis Sampul</label></div>
-            <input
-              class="form-control input"
-              type="text"
-              value="Soft Cover"
-              disabled="disabled"
-            />
+        <div class="content">
+          <div class="label"><p>Sosial Media</p></div>
+          <div class="media">
+            <p>
+              Instagram: <b>penerbit_ejbooks</b> <br />WhatsApp:
+              <b>085710335651</b>
+            </p>
           </div>
-          <h3 class="mt-4">Output</h3>
-          <div class="label"><label>Harga Buku Minimal</label></div>
-          <div class="price">
-            <p>Rp {{(250 * total_pages) + 15000 + 28000}},-</p>
-          </div>
-          <div class="label"><label>Royalti (25% dari harga buku)</label></div>
-          <div class="royalti">
-            <p>Rp {{((250 * total_pages) + 15000 + 30000) * 0.25}},-</p>
+          <div class="label"><p>Email</p></div>
+          <div class="media"><p>redaksi.ejbooks@gmail.com</p></div>
+          <div class="label"><p>Website</p></div>
+          <div class="media">
+            <p>
+              <a href="http://penerbit-ejbooks.my.id">penerbit-ejbooks.my.id</a>
+            </p>
           </div>
         </div>
       </div>

@@ -17,3 +17,7 @@ hideHeader.addEventListener("click", () => {
   headerBody.classList.remove("show");
   hideHeader.classList.remove("clear");
 });
+
+function detailBuku(judul) {
+  localStorage.setItem("judul_buku", judul);
+}

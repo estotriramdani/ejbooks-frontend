@@ -38,3 +38,29 @@ function showBookCard(b) {
 }
 
 // end best seller section
+
+// carousel inner
+const carouselInner = document.querySelector(".carousel-inner");
+const carouselItem = document.getElementsByClassName("carousel-item")[0];
+carouselItem.classList.add("active");
+fetch("http://localhost/ejbooks-backend/api/cover.php")
+  .then((res) => res.json())
+  .then((res) => {
+    let cover = "";
+    res.forEach((res) => {
+      cover += showCover(res);
+      carouselInner.innerHTML = cover;
+    });
+  });
+
+function showCover(c) {
+  return `
+  <div class="carousel-item">
+    <img
+      src="http://localhost/ejbooks-backend/crud/${c.gambar}"
+      class="d-block w-100"
+      alt="..."
+    />
+  </div>
+  `;
+}

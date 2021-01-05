@@ -1,6 +1,7 @@
 const bookList = document.querySelector(".book-list");
 const kategori_buku = localStorage.getItem("kategori");
 const sectionTitle = document.getElementById("section-title");
+console.log(kategori_buku.length);
 
 sectionTitle.innerHTML = kategori_buku;
 

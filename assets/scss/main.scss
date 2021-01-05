@@ -31,6 +31,24 @@ body {
   position: relative;
 }
 
+.turn-on {
+  cursor: pointer;
+  p {
+    font-size: 9px;
+    color: $white;
+    background-color: $green;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px white solid;
+    box-sizing: border-box;
+    &:hover,
+    &:active {
+      background-color: white;
+      color: $green;
+    }
+  }
+}
+
 .header {
   position: fixed;
   z-index: 10;

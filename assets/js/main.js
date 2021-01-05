@@ -41,8 +41,7 @@ function showBookCard(b) {
 
 // carousel inner
 const carouselInner = document.querySelector(".carousel-inner");
-const carouselItem = document.getElementsByClassName("carousel-item")[0];
-carouselItem.classList.add("active");
+
 fetch("http://localhost/ejbooks-backend/api/cover.php")
   .then((res) => res.json())
   .then((res) => {
@@ -57,10 +56,19 @@ function showCover(c) {
   return `
   <div class="carousel-item">
     <img
-      src="http://localhost/ejbooks-backend/crud/${c.gambar}"
+      src="http://penerbit-ejbooks.my.id/ejbooks-backend/crud/${c.gambar}"
       class="d-block w-100"
       alt="..."
     />
   </div>
   `;
+}
+
+function addActive() {
+  const carouselItem = document.querySelector(".carousel-item");
+  const turnOn = document.querySelector(".turn-on");
+  carouselItem.classList.add("active");
+  // turnOn.style.opacity = "0";
+  turnOn.style.transform = "translateY(-100%)";
+  turnOn.style.transition = "0.5s";
 }

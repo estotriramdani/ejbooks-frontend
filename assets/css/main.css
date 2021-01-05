@@ -26,6 +26,25 @@ body {
   position: relative;
 }
 
+.turn-on {
+  cursor: pointer;
+}
+
+.turn-on p {
+  font-size: 9px;
+  color: white;
+  background-color: #2a9d8f;
+  text-align: center;
+  padding: 5px 10px;
+  border: 1px white solid;
+  box-sizing: border-box;
+}
+
+.turn-on p:hover, .turn-on p:active {
+  background-color: white;
+  color: #2a9d8f;
+}
+
 .header {
   position: fixed;
   z-index: 10;

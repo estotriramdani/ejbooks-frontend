@@ -5,7 +5,7 @@ console.log(kategori_buku.length);
 
 sectionTitle.innerHTML = kategori_buku;
 
-fetch("http://localhost/ejbooks-backend/api/")
+fetch("http://penerbit-ejbooks.my.id/ejbooks-backend/api/")
   .then((res) => res.json())
   .then((res) => {
     let bookCard = "";
@@ -22,7 +22,7 @@ function showBookCard(b) {
     <div class="book">
       <div class="book-card">
         <div class="thumb"> 
-          <img src="http://localhost/ejbooks-backend/crud/${b.cover}" alt="EJ Books. 2020. ${b.judul}" />
+          <img src="http://penerbit-ejbooks.my.id/ejbooks-backend/crud/${b.cover}" alt="EJ Books. 2020. ${b.judul}" />
           <span class="price">Rp${b.harga} </span>
         </div>
         <div class="identity">

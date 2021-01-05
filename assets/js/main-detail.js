@@ -2,7 +2,7 @@ const content = document.querySelector(".content");
 const judul_buku = localStorage.getItem("judul_buku");
 console.log(judul_buku.length);
 
-fetch("http://localhost/ejbooks-backend/api/")
+fetch("http://penerbit-ejbooks.my.id/ejbooks-backend/api/")
   .then((res) => res.json())
   .then((res) => {
     let bookDetail = "";
@@ -18,7 +18,7 @@ function showBookDetail(b) {
   const linkWA = `https://api.whatsapp.com/send/?phone=6285710335651&text=Halo saya mau pesan buku *${b.judul}* karya *${b.pengarang}* dengan harga *Rp${b.harga}*. Mohon dibantu, Min!`;
   return `
     <div class="thumb">
-      <img src="http://localhost/ejbooks-backend/crud/${b.cover}" alt="" />
+      <img src="http://penerbit-ejbooks.my.id/ejbooks-backend/${b.cover}" alt="EJ Books penerbit buku" />
     </div>
     <div class="identity">
       <table>

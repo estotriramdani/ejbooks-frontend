@@ -21,3 +21,7 @@ hideHeader.addEventListener("click", () => {
 function detailBuku(judul) {
   localStorage.setItem("judul_buku", judul);
 }
+
+function kategori(kategori) {
+  localStorage.setItem("kategori", kategori);
+}

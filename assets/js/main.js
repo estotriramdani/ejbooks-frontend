@@ -9,7 +9,6 @@ fetch("http://localhost/ejbooks-backend/api/")
       if (res.best_seller == 1) {
         bookCard += showBookCard(res);
         bookCardWrapper.innerHTML = bookCard;
-      } else {
       }
     });
   });

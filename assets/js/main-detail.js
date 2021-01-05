@@ -15,9 +15,8 @@ fetch("http://localhost/ejbooks-backend/api/")
   });
 
 function showBookDetail(b) {
-  console.log(b.judul);
+  const linkWA = `https://api.whatsapp.com/send/?phone=6285710335651&text=Halo saya mau pesan buku *${b.judul}* karya *${b.pengarang}* dengan harga *Rp${b.harga}*. Mohon dibantu, Min!`;
   return `
-    <!-- <h3>Detail Buku</h3> -->
     <div class="thumb">
       <img src="http://localhost/ejbooks-backend/crud/${b.cover}" alt="" />
     </div>
@@ -54,7 +53,7 @@ function showBookDetail(b) {
       </table>
     </div>
     <div class="btn-buy" style="margin: 10px 0 10px 0">
-      <a href="" target="_blank">Beli Buku</a>
+      <a href="${linkWA}" target="_blank">Beli Buku</a>
     </div>
     <div class="btn-see"><a href="buku.html">Lihat Buku Lainnya</a></div>
     <br />

@@ -1,7 +1,7 @@
 // Best seller section
 const bookCardWrapper = document.querySelector(".book-card-wrapper");
 
-fetch("http://localhost/ejbooks-backend/api/")
+fetch("http://penerbit-ejbooks.my.id/ejbooks-backend/api/")
   .then((res) => res.json())
   .then((res) => {
     let bookCard = "";
@@ -18,7 +18,7 @@ function showBookCard(b) {
   return `
   <div class="book-card" style="margin-bottom: 18px;"> 
     <div class="thumb">
-      <img src="http://localhost/ejbooks-backend/crud/${b.cover}" alt="" />
+      <img src="http://penerbit-ejbooks.my.id/ejbooks-backend/crud/${b.cover}" alt="" />
       <span class="price">Rp  ${b.harga} </span>
     </div>
     <div class="identity">

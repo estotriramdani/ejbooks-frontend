@@ -22,7 +22,6 @@ body {
   width: 414px;
   background-color: white;
   overflow-x: hidden;
-  min-height: 110vh;
   position: relative;
 }
 

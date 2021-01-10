@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(42, 157, 143, 0.8);
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a9d8f;
+  height: 4px !important;
+}
+
+.content-body {
+  margin: 0 auto;
+  width: 414px;
+  background-color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  color: white;
+  width: 414px;
+}
+
+.header .header-head {
+  position: relative;
+  background-color: #2a9d8f;
+  height: 7vh;
+  padding-top: 1.6vh;
+  z-index: 10;
+}
+
+.header .header-head .logo img {
+  height: 25px;
+}
+
+.header .header-head .menu {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header .header-head .menu img {
+  height: 25px;
+  position: absolute;
+  right: 18px;
+}
+
+.header .header-body {
+  background-color: #2a9d8f;
+  width: 80%;
+  height: 93vh;
+  display: flex;
+  z-index: 9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0;
+  transform: translateX(105%);
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.header .header-body a {
+  font-weight: normal !important;
+  color: white;
+}
+
+.header .header-body a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.header .header-body a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  margin-top: 7vh;
+}
+
+.main .cover-slider {
+  position: relative;
+}
+
+.main .cover-slider .img {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.main .cover-slider .rounded {
+  width: 100%;
+  height: 30px;
+  border-top-left-radius: 30px !important;
+  border-top-right-radius: 30px !important;
+  position: absolute;
+  bottom: -2px;
+  background-color: white;
+  z-index: 3;
+}
+
+.main .content {
+  margin: 2px 18px 0 18px;
+  position: relative;
+}
+
+.main .content p {
+  font-size: 12px;
+  color: #2a9d8f;
+  text-align: left;
+}
+
+.main .content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  max-width: 203px;
+  color: #2a9d8f;
+}
+
+.main .content .label label {
+  font-size: 11px;
+  color: #2a9d8f;
+}
+
+.main .content .input {
+  border-color: #2a9d8f !important;
+  box-sizing: border-box;
+  padding: 7px;
+  font-size: 12px;
+  width: 280px;
+  color: #2a9d8f;
+  margin-bottom: 5px;
+}
+
+.main .content .input:focus {
+  border: #2a9d8f;
+}
+
+.main .content .price,
+.main .content .royalti {
+  font-size: 16px;
+  color: #2a9d8f;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 592px) {
+  .content-body {
+    width: 100%;
+  }
+  .header {
+    position: fixed;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main-kirim.css.map */
